@@ -15,3 +15,5 @@ html[data-theme="light"] .resume-close{color:#fff;border-color:#d8d2c6} html[dat
 .theme-toggle:hover,.theme-toggle:focus-visible{color:var(--red)} html .nav{align-items:center} html .nav .theme-toggle{font-size:inherit;line-height:inherit}
 @media(max-width:800px){.nav{gap:12px}.theme-toggle{padding:4px 6px}}
 @media(max-width:480px){.nav{gap:8px}.theme-toggle{font-size:9px;padding:4px}}
+
+html[data-theme="light"] .contact-title span:not(.cta-left){-webkit-text-stroke:1px #736d64}
