@@ -30,3 +30,6 @@
 .resume-agent svg{width:20px;height:22px;overflow:visible}
 .resume-done .resume-agent{display:none}
 @media(max-width:480px){.resume-agent span{font-size:7px}}
+
+/* Match the 18px SVG viewBox so the cursor hotspot tracks the caret. */
+.resume-agent svg{width:18px}
