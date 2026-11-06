@@ -1,0 +1,9 @@
+.contact-title .cta-left,.contact-title .cta-right{display:inline-block;will-change:transform,opacity}
+.contact-title .cta-left{color:var(--text);-webkit-text-stroke:0}
+.contact-title.cta-wait .cta-left{opacity:0;transform:translateX(-120px)}
+.contact-title.cta-wait .cta-right{opacity:0;transform:translateX(120px)}
+.contact-title.cta-arrived .cta-left{animation:cta-from-left .95s both}
+.contact-title.cta-arrived .cta-right{animation:cta-from-right .95s both}
+@keyframes cta-from-left{0%{opacity:0;transform:translateX(-120px)}75%{opacity:1;transform:translateX(7px)}100%{opacity:1;transform:translateX(0)}}
+@keyframes cta-from-right{0%{opacity:0;transform:translateX(120px)}75%{opacity:1;transform:translateX(-7px)}100%{opacity:1;transform:translateX(0)}}
+@media(prefers-reduced-motion:reduce){.contact-title.cta-wait .cta-left,.contact-title.cta-wait .cta-right{opacity:1;transform:none}.contact-title.cta-arrived .cta-left,.contact-title.cta-arrived .cta-right{animation:none}}
