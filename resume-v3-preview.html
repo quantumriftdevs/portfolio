@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Resume v3 preview</title>
+<style>html,body,iframe{width:100%;height:100%;margin:0;border:0}body{background:#111;color:#fff}</style></head>
+<body><iframe title="Portfolio resume v3 preview"></iframe><script>
+(async()=>{try{
+ const res=await fetch('/');if(!res.ok)throw Error('Site unavailable');
+ let html=await res.text();
+ const old='<script src="./resume-v2.js"></scr'+'ipt>';
+ const replacement='<script src="./resume-v3-markup.js"></scr'+'ipt><script src="./resume-v3-motion.js"></scr'+'ipt>';
+ if(!html.includes(old)||!html.includes('./resume-v2.css'))throw Error('Expected v2 hooks not found');
+ html=html.replace('<head>','<head><base href="/">').replace('./resume-v2.css','./resume-v3.css').replace(old,replacement);
+ document.querySelector('iframe').srcdoc=html;
+}catch(error){document.body.textContent='Preview unavailable: '+error.message}})();
+</script></body></html>
