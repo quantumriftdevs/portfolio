@@ -1,0 +1,17 @@
+/* Warm paper theme; the dark palette remains the default. */
+html[data-theme="light"]{--bg:#f2efe7;--panel:#e9e5db;--line:#c8c2b6;--muted:#68645e;--text:#24211e}
+html[data-theme="light"] .nav,html[data-theme="light"] .availability,html[data-theme="light"] .eyebrow,html[data-theme="light"] .intro-copy p,html[data-theme="light"] .project-copy p,html[data-theme="light"] .section-copy,html[data-theme="light"] .hero-note,html[data-theme="light"] .index,html[data-theme="light"] .matrix-row p{color:#625e57}
+html[data-theme="light"] .outline{-webkit-text-stroke:1px #736d64}
+html[data-theme="light"] .visual{background:linear-gradient(140deg,#ded8cc,#ece8df)}
+html[data-theme="light"] .visual:before{background:repeating-linear-gradient(0deg,transparent 0,transparent 31px,#423d3513 32px),repeating-linear-gradient(90deg,transparent 0,transparent 31px,#423d3513 32px)}
+html[data-theme="light"] .visual .vlabel{color:#504a43}
+html[data-theme="light"] .project-visual{background:#ded9cf}
+html[data-theme="light"] .project-topline,html[data-theme="light"] .windowbar{color:#5d5750}
+html[data-theme="light"] .fair-graphic{background:#eeeae1;border-color:#aba397;box-shadow:0 12px 50px #584d3c26}
+html[data-theme="light"] .windowbar,html[data-theme="light"] .bars>div{border-color:#c8c1b6}
+html[data-theme="light"] .resume-overlay{background:#302b25b8}
+html[data-theme="light"] .resume-close{color:#fff;border-color:#d8d2c6}
+.theme-toggle{appearance:none;background:none;color:inherit;border:1px solid currentColor;padding:5px 8px;font:10px var(--mono);letter-spacing:.05em;cursor:pointer;white-space:nowrap}
+.theme-toggle:hover,.theme-toggle:focus-visible{color:var(--red)}
+@media(max-width:800px){.nav{gap:12px}.theme-toggle{padding:4px 6px}}
+@media(max-width:480px){.nav{gap:8px}.theme-toggle{font-size:9px;padding:4px}}
