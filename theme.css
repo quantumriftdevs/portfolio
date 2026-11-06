@@ -12,6 +12,6 @@ html[data-theme="light"] .windowbar,html[data-theme="light"] .bars>div{border-co
 html[data-theme="light"] .resume-overlay{background:#302b25b8}
 html[data-theme="light"] .resume-close{color:#fff;border-color:#d8d2c6} html[data-theme="light"] :is(.hero-note strong,.fake-title,.tag,.ticker,.project-meta,.systems-intro,.now-row,.service-card p,.process-step p,.contact-bottom p){color:#625e57} html[data-theme="light"] .tag{border-color:#b9b2a6} @media(max-width:800px){html .nav{gap:12px}} @media(max-width:480px){html .nav{gap:8px}}
 .theme-toggle{appearance:none;background:none;color:inherit;border:1px solid currentColor;padding:5px 8px;font:10px var(--mono);letter-spacing:.05em;cursor:pointer;white-space:nowrap}
-.theme-toggle:hover,.theme-toggle:focus-visible{color:var(--red)}
+.theme-toggle:hover,.theme-toggle:focus-visible{color:var(--red)} html .nav{align-items:center} html .nav .theme-toggle{font-size:inherit;line-height:inherit}
 @media(max-width:800px){.nav{gap:12px}.theme-toggle{padding:4px 6px}}
 @media(max-width:480px){.nav{gap:8px}.theme-toggle{font-size:9px;padding:4px}}
